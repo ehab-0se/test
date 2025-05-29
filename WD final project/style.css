@@ -1,0 +1,148 @@
+body {
+            font-family: 'Inter', sans-serif; /* تأكد من توفر هذا الخط أو استبدله بخط مناسب */
+            background-color: #F4EEE5;
+            padding-top: 75px; /* لتعويض ارتفاع الهيدر الثابت */
+            direction: rtl;
+        }
+        .header-custom {
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            height: 75px;
+        }
+        .logo-custom img {
+            height: 60px;
+        }
+        .navbar-custom .nav-link {
+            color: #2F6D5E; 
+            font-weight: 500;
+            padding: 0.75rem 1rem;
+            transition: color 0.3s;
+        }
+        .navbar-nav {
+            background-color: #fff ; 
+            width: 100%; 
+        }
+        .navbar-toggler {
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .navbar-toggler:hover {
+            background-color: rgba(47, 109, 94, 0.1); 
+        } 
+        .navbar-custom .nav-link:hover,
+        .navbar-custom .nav-link.active { 
+            color: #81A297;
+            font-weight: bold;
+        }
+
+        /* --- تعديل مهم لتصحيح التمرير مع الرأس الثابت --- */
+        section[id] {
+            scroll-margin-top: 85px; /* قيمة تساوي ارتفاع الهيدر + مسافة صغيرة إضافية */
+        }
+        /* --- نهاية التعديل المهم --- */
+
+        .section-custom {
+            padding: 60px 0;
+        }
+        .section-custom-inner {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: calc(100vh - 75px - 120px); 
+        }
+        .main_section {
+            background-color: #F0F4F8; 
+            color: #1A202C; 
+        }
+        .main_section h1 { 
+            font-size: 3rem;  
+            line-height: 1.2;
+            font-weight: 700;
+        }
+        .main_section .highlight {
+            font-size: inherit; 
+            color: #2F6D5E;   
+            display: block;     
+        }
+        .main_section_btn {
+            background-color: #2F6D5E;
+            border-color: #2F6D5E;
+            color: #fff;
+            font-weight: 600;
+            padding: 0.75rem 2rem;
+            border-radius: 0.375rem; 
+        }
+        .main_section_btn:hover {
+            background-color: #1E493F;
+            border-color: #1E493F;
+            color: #fff;
+        }
+        .section-title {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #2F6D5E;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid #81A297;
+            padding-bottom: 0.5rem; 
+            display: inline-block; 
+        }
+        .section-content {
+            font-size: 1.1rem;
+            color: #333;
+            max-width: 800px; 
+            line-height: 1.6; 
+        }
+        .contact-form-custom {
+            max-width: 500px;
+            margin-top: 2rem;
+        }
+        .btn-submit-custom {
+            background-color: #2F6D5E;
+            border-color: #2F6D5E;
+            color: #fff;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem; 
+            border-radius: 0.375rem; 
+        }
+        .btn-submit-custom:hover {
+            background-color: #1E493F;
+            border-color: #1E493F;
+            color: #fff;
+        }
+        .footer-custom {
+            background-color: #2F6D5E;
+            color: #E2E8F0;
+            padding: 20px 0; 
+        }
+        .card-custom-bg {
+            background-color: #fff;
+            border: none; 
+            border-radius: 0.5rem; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-custom-bg:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 20px rgba(47,109,94,0.15); 
+        }
+        .card-title-custom { 
+            color: #2F6D5E; 
+            font-weight: 600; 
+        }
+        .card-text-custom { 
+            color: #555; 
+            font-size: 0.9rem; 
+        }
+        .card .bi { 
+            font-size: 2.5rem; 
+            color: #2F6D5E;
+            margin-bottom: 1rem; 
+        }
+        a.custom-link-color, a.custom-link-color:hover {
+            color: #2F6D5E;
+            text-decoration: none; 
+        }
+        a.custom-link-color:hover { 
+            color: #1E493F; 
+            text-decoration: underline; 
+        }
